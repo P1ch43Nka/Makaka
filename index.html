@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ваш сайт</title>
     <script>
+        // Проверяем, является ли устройство мобильным
         if (/Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)) {
-            window.location.href = "mobile/index.html"; // Папка с мобильной версией
+            // Перенаправляем на мобильную версию
+            window.location.href = "mobile/index.html";
         } else {
-            window.location.href = "desktop/index.html"; // Папка с ПК-версией
+            // Перенаправляем на десктопную версию
+            window.location.href = "desktop/index.html";
         }
     </script>
-    
 </head>
 <body>
-    
+    <!-- Здесь может быть контент для тех, кто не попал на редирект -->
 </body>
 </html>
