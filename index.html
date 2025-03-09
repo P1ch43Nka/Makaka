@@ -5,14 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ваш сайт</title>
     <script>
-        // Проверяем, является ли устройство мобильным
-        if (/Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)) {
-            // Перенаправляем на мобильную версию
-            window.location.href = "mobile/index.html";
-        } else {
-            // Перенаправляем на десктопную версию
-            window.location.href = "desktop/index.html";
-        }
+        (function() {
+            try {
+                // Проверяем, является ли устройство мобильным
+                if (/Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)) {
+                    // Перенаправляем на мобильную версию
+                    window.location.href = "mobile/index.html";
+                } else {
+                    // Перенаправляем на десктопную версию
+                    window.location.href = "desktop/index.html";
+                }
+            } catch (e) {
+                console.error('Ошибка при редиректе:', e);
+            }
+        })();
     </script>
 </head>
 <body>
