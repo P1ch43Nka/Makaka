@@ -8,16 +8,22 @@ html, body {
     height: 100%;
     overflow: hidden;
 }
-
+body {
+    height: 100dvh;
+}
 header {
     background: #000000; 
     padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
 }
 .logo1 {
     border-radius: 10px;
+    transition: transform 0.5s;
 }
 .wq {
     margin-left: 70px;
@@ -25,20 +31,21 @@ header {
     
 .logo {
     border-radius: 10px;
+    transition: transform 0.5s;
 }
 
 .logo1:hover {
-    transition: 0.5s;
     transform: scale(1.2);
 }
+
 .logo:hover {
-    transition: 0.5s;
     transform: scale(1.2);
 }
 nav {
     display: flex;
     flex-grow: 1; 
     justify-content: center;
+    
     
 }
 
@@ -69,10 +76,11 @@ nav {
     position: absolute;
     top: 100%;
     left: 0;
-    background: gray;
+    background: rgb(255, 0, 0);
     list-style: none;
     min-width: 150px;
     border-radius: 10px;
+    border: 2px solid rgb(0, 0, 0);
 }
 
 .submenu li {
@@ -93,10 +101,12 @@ nav {
     display: block;
 }
 .menu li:hover  {
-    background-color: rgba(226, 226, 226, 0.452);
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     transition: 0.2s;
-    transform: scale(1.05);
+    transform: scale(1.03);
+    
+
 }
 body {
     background-image: url(imoges/backg.jpg);
@@ -112,11 +122,12 @@ body {
 .menu-button{
     border-radius: 10px;
     cursor: pointer;
+    transition: transform 0.5s;
     
 }
 
 .menu-button:hover {
-    transition: 0.5s;
+    
     transform: scale(1.2);
 }
 
@@ -126,7 +137,7 @@ body {
     right: 0px;
     width: 250px;
     height: 100%;
-    background-color: #333;
+    background-color: #504e4e;
     color: white;
     padding-top: 60px;
     padding-right: 10px;
@@ -196,18 +207,48 @@ main {
     height: 100dvh;
 }
 
+.cic {
+    display: block;
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 10px;
+    width: 135px;
+    height: 135px;
+    border: 3px solid #6e0000;
+    margin-top: 20%;
+    margin-left: 20%;
+    text-align: center;
+    font-size: 25px;
+    color: aliceblue;
+    box-shadow: 0 0 10px #490000;    
+    animation: hui-reverse 3s forwards;
+    text-transform: uppercase;
+    
 
+    
+   
+}
+.cic:hover  {
+    animation-name: hui;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+    box-shadow: 0 0 10px #fffb00;       
+}
+.cic a {
+    text-decoration: none;
+    color: rgb(51, 255, 0);
+    text-shadow: 5px 5px 5px hsl(0, 100%, 50%);       
+}
 
+@keyframes hui {
+    100%{transform: rotatez(360deg) scale(1.5)}
 
-
-
-
-
-
-
-
-
-
+}
+@keyframes hui-reverse {
+    0% { transform: rotatez(360deg) scale(1.5);}
+    100% { transform: rotatez(0deg) scale(1);}
+}
 
 
 
