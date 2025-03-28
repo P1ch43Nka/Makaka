@@ -29,36 +29,30 @@ header {
           align-items: center;
   width: 100%;
   position: fixed;
-  z-index: 1000;
+  z-index: 0;
   max-width: 100%;
 }
 
-.logo1, .logo3 {
+.wwsq .logo1, .wwsq .logo2, .wwsq .logo3 {
+  z-index: 1000;
   border-radius: 10px;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transition: -webkit-transform 0.5s ease, -webkit-box-shadow 0.5s ease;
+  transition: -webkit-transform 0.5s ease, -webkit-box-shadow 0.5s ease;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  transition: transform 0.5s ease, box-shadow 0.5s ease, -webkit-transform 0.5s ease, -webkit-box-shadow 0.5s ease; /* Плавный переход для увеличения и тени */
   margin-left: 70px;
   width: 200px;
   height: 100px;
 }
-
-.logo2 {
-  border-radius: 10px;
-  border-radius: 10px;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
-  margin-left: 70px;
-  width: 200px;
-  height: 100px;
-}
-
-.logo1:hover, .logo2:hover .logo3:hover {
+.wwsq .logo1:hover, .wwsq .logo2:hover, .wwsq .logo3:hover {
   -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+          transform: scale(1.2); /* Увеличение */
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Добавляем тень для визуального эффекта */
+}
+
+.logo2, .logo3 {
+  z-index: 2000; /* Убедитесь, что они выше других элементов */
 }
 
 nav {
@@ -144,6 +138,7 @@ body {
 }
 
 .side-menu {
+  z-index: 1000;
   font-weight: 900;
   position: fixed;
   top: 0;
@@ -229,10 +224,9 @@ main {
 }
 
 .menu-button {
-  position: sticky;
   top: 10px;
   right: 10px;
-  z-index: 1000;
+  z-index: 0;
   border-radius: 40%;
   cursor: pointer;
   -webkit-transition: -webkit-transform 0.9s;
