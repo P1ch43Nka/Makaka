@@ -138,6 +138,7 @@ body {
 }
 
 .side-menu {
+  z-index: 1000;
   font-weight: 900;
   position: fixed;
   top: 0;
