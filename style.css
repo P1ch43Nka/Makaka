@@ -33,25 +33,32 @@ header {
   max-width: 100%;
 }
 
-.logo1, .logo2 .logo3 {
+.logo1, .logo3 {
   border-radius: 10px;
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
+  margin-left: 70px;
+  width: 200px;
+  height: 100px;
 }
 
 .logo2 {
   border-radius: 10px;
+  border-radius: 10px;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  margin-left: 70px;
+  width: 200px;
+  height: 100px;
 }
 
 .logo1:hover, .logo2:hover .logo3:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-}
-
-.wq {
-  margin-left: 70px;
 }
 
 nav {
@@ -534,5 +541,73 @@ main {
     position: absolute;
     left: 10px;
     bottom: 320px;
+  }
+}
+@media (max-width: 500px) {
+  .fet {
+    height: 130px;
+  }
+  .wwsq .logo1 {
+    height: 70px;
+    width: 140px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-left: 0px;
+  }
+  .wwsq .logo2 {
+    height: 70px;
+    width: 140px;
+    position: absolute;
+    top: 75px;
+    left: 0px;
+    margin-left: 0px;
+  }
+  .wwsq .logo3 {
+    height: 70px;
+    width: 140px;
+    position: absolute;
+    top: 0px;
+    left: 141px;
+    margin-left: 0px;
+  }
+  .menu-button {
+    z-index: 0;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    padding: 0px;
+    margin: 0px;
+  }
+  .abonament {
+    bottom: 130px;
+    width: 100vw;
+  }
+  .abonament .wwss {
+    padding: 0px;
+    position: absolute;
+    top: 0px;
+  }
+  .targówek {
+    bottom: 310px;
+    width: 100vw;
+  }
+  .ws1 {
+    z-index: 1000;
+    bottom: 70px;
+    left: 0px;
+    height: 70px;
+    width: 70px;
+    font-size: 10px;
+    font-family: Manrope;
+  }
+  .ws {
+    z-index: 1000;
+    bottom: 0px;
+    left: 0px;
+    height: 70px;
+    width: 70px;
+    font-size: 10px;
+    font-family: Manrope;
   }
 }
