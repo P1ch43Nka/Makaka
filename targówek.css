@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url(imoges/targowek-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.back {
+  display: inline;
+}
+.back img {
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+}
+
+#hs {
+  color: yellow;
+  font-size: 40px;
+}
+
+.main {
+  background-color: rgba(0, 0, 0, 0.315);
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 800px;
+  height: 500px;
+  text-transform: capitalize;
+  font-weight: 900;
+  position: relative;
+  left: 100px;
+  top: 100px;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border: 3px solid #000000;
+  border-radius: 20px;
+}
+.main .nigg {
+  position: absolute;
+  bottom: 200px;
+  left: 100px;
+}
+.main .wwq {
+  text-align: end;
+}
+.main .wwq .gg {
+  position: absolute;
+  bottom: 170px;
+  right: 29%;
+  padding: 3px 40px;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.main .wwq .gg:active {
+  background-color: rgb(0, 255, 170);
+}
+.main .wwq input {
+  margin: 2px;
+  border-radius: 20px;
+  width: 300px;
+  padding: 0px 0px 0px 10px;
+  font-size: 20px;
+  border: 3px solid black;
+}
+.main .wwq input:focus {
+  background-color: rgb(0, 217, 255);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#textContainer {
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  position: absolute;
+  bottom: 110px;
+  right: 110px;
+}
+
+video {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
