@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -6,9 +7,11 @@
 }
 
 body {
+  min-height: 100vh;
   background-image: url(imoges/targowek-background.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  size: cover;
+  background-position: center;
 }
 
 .back {
@@ -25,21 +28,16 @@ body {
 }
 
 .main {
+  position: absolute;
   background-color: rgba(0, 0, 0, 0.315);
   text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   max-width: 800px;
-  height: 500px;
+  height: 400px;
   text-transform: capitalize;
   font-weight: 900;
-  position: relative;
-  left: 100px;
-  top: 100px;
+  left: 0px;
+  margin-left: 100px;
+  top: 200px;
   color: rgb(255, 255, 255);
   padding: 10px;
   border: 3px solid #000000;
@@ -47,15 +45,15 @@ body {
 }
 .main .nigg {
   position: absolute;
-  bottom: 200px;
-  left: 100px;
+  bottom: 100px;
+  left: 30px;
 }
 .main .wwq {
   text-align: end;
 }
 .main .wwq .gg {
   position: absolute;
-  bottom: 170px;
+  bottom: 70px;
   right: 29%;
   padding: 3px 40px;
   border: 1px solid black;
@@ -91,7 +89,32 @@ body {
 }
 
 video {
+  display: none;
   position: absolute;
   right: 0px;
   bottom: 0px;
+}
+
+@media (max-width: 400px) {
+  .main {
+    width: 100vw;
+  }
+}
+@media (max-width: 500px) {
+  .main {
+    min-width: 100vw;
+    position: absolute;
+    margin-left: 0px;
+  }
+  .main .nigg {
+    display: inline;
+    position: absolute;
+    bottom: 0px;
+    left: 1px;
+  }
+  body {
+    background-image: url(imoges/targówek-mob.png);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+  }
 }
