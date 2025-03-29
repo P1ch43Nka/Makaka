@@ -20,12 +20,12 @@
     <div class="wwq">
 
     <form class="nigg" action="#" method="post">
-        <div class="form-group">
+        <span class="form-group">
             <label for="adres">Adres:</label>
             <input id="inputField" name="adres" maxlength="30" required type="text">
-        </div>
+        </span>
 
-        <div class="form-group">
+        <span class="form-group">
             <label for="kod">Kod pocztowy:</label>
             <input id="inputField" name="kod" maxlength="6" required type="text">
         </div>
@@ -39,6 +39,7 @@
         <div id="textContainer" style="display: none; margin-top: 20px; color: white;">
             dzięki cfelu za adres, mefedron w drodze
         </div>
+
         <script>
         document.getElementById('showTextButton').addEventListener('click', function () {
     const inputField = document.getElementById('inputField');
@@ -58,7 +59,7 @@
 </div>
 
     <div class="video">
-        <video src="imoges/targówek.mp4" autoplay loop muted controls  width="300px">
+        <video src="imoges/targówek.mp4" preload="auto" autoplay loop muted controls  width="300px">
 
         </video>
     </div>
