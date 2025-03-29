@@ -227,6 +227,7 @@ main {
 }
 
 .ws {
+  z-index:100;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -256,6 +257,7 @@ main {
 }
 
 .ws1 {
+  z-index:100;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
