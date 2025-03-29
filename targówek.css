@@ -1,0 +1,126 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100dvh;
+  background-image: url(imoges/targowek-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.back {
+  display: inline;
+}
+.back img {
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+}
+
+#hs {
+  color: yellow;
+  font-size: 40px;
+}
+
+.main {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.315);
+  text-align: center;
+  max-width: 800px;
+  height: 400px;
+  text-transform: capitalize;
+  font-weight: 900;
+  left: 0px;
+  margin-left: 100px;
+  top: 200px;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border: 3px solid #000000;
+  border-radius: 20px;
+}
+.main .nigg {
+  margin-top: 20px;
+  text-align: end;
+  margin-right: 100px;
+}
+.main input {
+  margin: 2px;
+  border-radius: 20px;
+  width: 300px;
+  padding: 0px 0px 0px 10px;
+  font-size: 20px;
+  border: 3px solid black;
+}
+.main input:focus {
+  background-color: rgb(0, 217, 255);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.main .gg {
+  position: absolute;
+  bottom: 70px;
+  right: 29%;
+  width: 150px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.main .gg:active {
+  background-color: rgb(0, 255, 170);
+}
+
+#textContainer {
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  position: absolute;
+  bottom: 110px;
+  right: 110px;
+}
+
+video {
+  display: none;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+@media (max-width: 400px) {
+  .main {
+    width: 100vw;
+  }
+}
+@media (max-width: 500px) {
+  .main {
+    min-width: 100vw;
+    margin-left: 0px;
+    height: 500px;
+    top: 500px;
+    position: absolute;
+  }
+  .main .nigg {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .main .gg {
+    position: absolute;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    bottom: 0px;
+    width: 150px;
+    height: 30px;
+  }
+  body {
+    background-image: url(imoges/targówek-mob.png);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+  }
+}
