@@ -29,12 +29,11 @@ header {
           align-items: center;
   width: 100%;
   position: fixed;
- 
+  z-index: 110;
   max-width: 100%;
 }
 
 .wwsq .logo1, .wwsq .logo2, .wwsq .logo3 {
-  
   border-radius: 10px;
   -webkit-transition: -webkit-transform 0.5s ease, -webkit-box-shadow 0.5s ease;
   transition: -webkit-transform 0.5s ease, -webkit-box-shadow 0.5s ease;
@@ -47,11 +46,9 @@ header {
 .wwsq .logo1:hover, .wwsq .logo2:hover, .wwsq .logo3:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2); /* Увеличение */
-  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Добавляем тень для визуального эффекта */
+  -webkit-box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
+          box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5); /* Добавляем тень для визуального эффекта */
 }
-
-
 
 nav {
   -webkit-box-flex: 1;
@@ -136,7 +133,6 @@ body {
 }
 
 .side-menu {
-
   font-weight: 900;
   position: fixed;
   top: 0;
@@ -170,13 +166,6 @@ body {
 .side-menu ul li a:hover {
   background-color: rgba(214, 73, 73, 0.6235294118);
   min-width: 100%;
-}
-
-.container {
-  position: relative;
-}
-.container #toggle-menu {
-  position: sticky;
 }
 
 .close-btn {
@@ -224,7 +213,6 @@ main {
 .menu-button {
   top: 10px;
   right: 10px;
- 
   border-radius: 40%;
   cursor: pointer;
   -webkit-transition: -webkit-transform 0.9s;
@@ -564,7 +552,6 @@ main {
     margin-left: 0px;
   }
   .menu-button {
-   
     position: absolute;
     top: 60px;
     right: 0px;
@@ -585,7 +572,6 @@ main {
     width: 100vw;
   }
   .ws1 {
-  
     bottom: 70px;
     left: 0px;
     height: 70px;
@@ -594,7 +580,6 @@ main {
     font-family: Manrope;
   }
   .ws {
- 
     bottom: 0px;
     left: 0px;
     height: 70px;
