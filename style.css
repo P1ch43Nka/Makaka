@@ -29,12 +29,12 @@ header {
           align-items: center;
   width: 100%;
   position: fixed;
-  z-index: 0;
+ 
   max-width: 100%;
 }
 
 .wwsq .logo1, .wwsq .logo2, .wwsq .logo3 {
-  z-index: 1000;
+  
   border-radius: 10px;
   -webkit-transition: -webkit-transform 0.5s ease, -webkit-box-shadow 0.5s ease;
   transition: -webkit-transform 0.5s ease, -webkit-box-shadow 0.5s ease;
@@ -51,9 +51,7 @@ header {
           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Добавляем тень для визуального эффекта */
 }
 
-.logo2, .logo3 {
-  z-index: 2000; /* Убедитесь, что они выше других элементов */
-}
+
 
 nav {
   -webkit-box-flex: 1;
@@ -138,7 +136,7 @@ body {
 }
 
 .side-menu {
-  z-index: 1000;
+
   font-weight: 900;
   position: fixed;
   top: 0;
@@ -226,7 +224,7 @@ main {
 .menu-button {
   top: 10px;
   right: 10px;
-  z-index: 0;
+ 
   border-radius: 40%;
   cursor: pointer;
   -webkit-transition: -webkit-transform 0.9s;
@@ -566,7 +564,7 @@ main {
     margin-left: 0px;
   }
   .menu-button {
-    z-index: 0;
+   
     position: absolute;
     top: 60px;
     right: 0px;
@@ -587,7 +585,7 @@ main {
     width: 100vw;
   }
   .ws1 {
-    z-index: 1000;
+  
     bottom: 70px;
     left: 0px;
     height: 70px;
@@ -596,7 +594,7 @@ main {
     font-family: Manrope;
   }
   .ws {
-    z-index: 1000;
+ 
     bottom: 0px;
     left: 0px;
     height: 70px;
